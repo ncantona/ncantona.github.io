@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(imgs/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: "Inter";
+    color: white;
+}
+
+
+@font-face {
+    font-family: "Inter";
+    src: url("fonts/Inter/static/Inter_18pt-Light.ttf");
+}
+
+#loginObj {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.74);
+    backdrop-filter: blur(6px);
+    border-radius: 10px;
+    color: white;
+    width: 400px;
+    height: 500px;
+    gap: 15px;
+    box-shadow: 0px 0px 300px 100px rgba(87, 102, 87, 0.45);
+    gap: 30px;
+}
+
+.loginField {
+    border: 10px solid black;
+}
+
+
+#loginHeader {
+    align-self: center;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.loginInput {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.779);
+    border-radius: 15px;
+    padding: 15px;
+    padding-right: 40%;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.loginInput:focus {
+    outline: 1.5px solid white;
+}
+
+.loginfield {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#remPwCon {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cbpw {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+#rememberCb {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+}
+
+#loginButton:hover {
+    background-color: rgba(255, 255, 255, 0.788);
+    color: rgb(1, 60, 10);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#loginButton {
+    font-size: 1.5rem;
+    padding: 20px;
+    width: 80%;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.623);
+    color: rgba(12, 63, 12, 0.667);
+}
+
+#timerHeader {
+    display: flex;
+    font-size: 40px;
+}
+
+#timer {
+    font-size: 4rem;
+    margin: 20px;
+}
+
+#stopTimer {
+    color: rgba(21, 67, 26, 0.511);
+}
+
+#stopTimer:hover {
+    cursor: default;
+}
+
+#stopTimer::selection {
+    background-color: transparent;
+    color: inherit;
+}
+
+#resetPasswordCon {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    width: 500px;
+    height: 250px;
+    border: 2px solid rgba(255, 255, 255, 0.799);
+    border-radius: 20px;
+    align-items: center;
+    backdrop-filter: blur(6px);
+}
+
+.resetPassword {
+    display: flex;
+    justify-content: center;
+}
+
+#resetButton {
+    font-size: 1.5rem;
+    padding: 13px;
+    width: 60%;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.623);
+    color: rgba(12, 63, 12, 0.667);
+}
+
+#resetPasswordInput {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.779);
+    border-radius: 15px;
+    padding: 15px;
+    padding-right: 40%;
+    color: white;
+    font-size: 1.2rem;
+    width: 30%;
+}
+
+#resetPasswordHeader {
+    align-self: center;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin: 20px;
+    margin-top: 30px;
+    color: white;
+}
+
+#resetPasswordInput:focus {
+    outline: 1.5px solid white;
+}
+
+#resetButton:hover {
+    background-color: rgba(255, 255, 255, 0.788);
+    color: rgb(1, 60, 10);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#forgotPasswordButton {
+    border: none;
+    background: none;
+    font-size: 1rem;
+}
+
+#forgotPasswordButton:hover {
+    cursor: pointer;
+    text-shadow: 0 0 15px white;
+}
+
+#registerButton {
+    border: none;
+    background: none;
+    font-size: 1rem;
+    color: rgb(6, 36, 0);
+}
+
+#registerButton:hover {
+    cursor: pointer;
+    text-shadow: 0 0 15px white;
+    color: white;
+}
+
+#resetError {
+    visibility: hidden;
+    margin: 7px;
+    color: rgb(138, 2, 2);
+}
+
+#congratsMsg {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    font-size: 5rem;
+    color: rgb(0, 94, 27);
+}
+
+#firework {
+    height: 1700px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#registerForm {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    width: 500px;
+    height: 710px;
+    border: 2px solid rgba(255, 255, 255, 0.799);
+    border-radius: 20px;
+    align-items: center;
+    backdrop-filter: blur(6px);
+}
+
+.registerInput {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.779);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 1.2rem;
+    width: 75%;
+    margin: 5px;
+    color: white;
+}
+
+.registerInput:focus {
+    outline: 1.5px solid white;
+}
+
+#generalInfo {
+    align-self: center;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+#sendRegisterButton {
+    font-size: 1.5rem;
+    padding: 20px;
+    width: 80%;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background-color: rgba(255, 255, 255, 0.623);
+    color: rgba(12, 63, 12, 0.667);
+    margin: 10px;
+}
+
+#registerNumberError {
+    visibility: hidden;
+    color: rgb(99, 1, 1);
+}
+
+#registerEmailError {
+    visibility: hidden;
+    color: rgb(99, 1, 1);
+}
+
+#registerCityError {
+    visibility: hidden;
+    color: rgb(99, 1, 1);
+}
+
+#registerNamesError {
+    visibility: hidden;
+    color: rgb(99, 1, 1);
+}
+
+#registerTitleError {
+    visibility: hidden;
+    color: rgb(99, 1, 1);
+}
+
+#registerUsernameError{
+    visibility: hidden;
+    color: rgb(99, 1, 1);
+}
+
+#registerTitle {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.779);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 1.2rem;
+    width: 81%;
+    margin: 5px;
+    color: white;
+}
+
+#registerTitle:focus {
+    outline: 1.5px solid white;
+}
+
+#registerNames {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.registerNames {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.779);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 1.2rem;
+    width: 33%;
+    color: white;
+    margin: 0 10px 0 10px;
+}
+
+#sendRegisterButton:hover {
+    background-color: rgba(255, 255, 255, 0.788);
+    color: rgb(1, 60, 10);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#registered {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 240px;
+    border: 2px solid rgba(255, 255, 255, 0.799);
+    border-radius: 20px;
+    align-items: center;
+    backdrop-filter: blur(6px);
+    font-size: 2rem;
+}
+
+.usernameTaken {
+    font-size: 1.1rem;
+    color: rgb(84, 3, 3);
+}
+
+#usernameTakenLast {
+    padding-bottom: 10px;
+}
+
+#registeredNowMsg {
+    margin: 15px;
+}
+
+.registeredMsg {
+    font-size: 1rem;
+}
+
+#registerFirstNameInp:focus {
+    outline: 1.5px solid white;
+}
+
+#registerLastNameInp:focus {
+    outline: 1.5px solid white;
+}
+
+#windowCrashedWin {
+    display: none;
+    rotate: 15deg;
+    font-weight: bold;
+    font-size: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    color: rgb(84, 3, 3);
+}
+
+#alreadyRegistered {
+    visibility: hidden;
+    margin: -30px;
+    color: rgb(84, 3, 3);
+}

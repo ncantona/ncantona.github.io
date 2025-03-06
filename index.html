@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="fonts/Inter/">
+    <title>Try to login</title>
+</head>
+<body>
+    <div id="congratsMsg">
+        <div><b>CONGRATS!</b></div>
+        <div>You're now logged in!</div>
+        <img id="firework" src="imgs/firework.gif" alt="firework">
+    </div>
+    <div id="loginObj">
+        <div id="resetPasswordCon">
+            <label class="resetPassword" id="resetPasswordHeader" for="resetPassword">Current password:</label>
+            <input class="resetPassword" type="password" name="resetPassword" id="resetPasswordInput" placeholder="Password">
+            <div id="resetError">null</div>
+            <button class="resetPassword" id="resetButton">reset</button>
+        </div>
+        <div id="registered">
+            <div id="registeredNowMsg">You're registered now!</div>
+            <div class="usernameTaken">Sorry but your chosen username is already taken.</div>
+            <div class="usernameTaken" id="usernameTakenLast">But luckily we created a random one for you!</div>
+            <div class="registeredMsg"><b>Your username:</b></div>
+            <div class="registeredMsg" id="finalUsername">null</div>
+            <div class="registeredMsg"><b>Your password:</b></div>
+            <div class="registeredMsg" id="finalPassword">null</div>
+        </div>
+        <div id="registerForm">
+            <div id="generalInfo">General Information</div>
+            <label for="registerTitle"></label>
+            <select name="registerTitle" id="registerTitle">
+                <option value="1">Title</option>
+                <option value="2">Doktor</option>
+                <option value="3">Teacher</option>
+                <option value="4">President</option>
+            </select>
+            <div id="registerTitleError">You need to choose your Title!</div>
+            <div id="registerNames">
+                <label for="firstNameInp"></label>
+                <input type="text" name="firstNameInp" id="registerFirstNameInp" class="registerNames" placeholder="First Name">
+                <label for="lastNameInp"></label>
+                <input type="text" name="lastNameInp" id="registerLastNameInp" class="registerNames" placeholder="Last Name">
+            </div>
+            <div id="registerNamesError">You need to type in your Names!</div>
+            <label for="registerUsername"></label>
+            <input type="text" name="registerUsername" id="registerUsername" class="registerInput" placeholder="Username">
+            <div id="registerUsernameError">null</div>
+            <label for="registerPhone"></label>
+            <input type="number" name="registerPhone" id="registerPhone" class="registerInput" placeholder="Phone Number">
+            <div id="registerNumberError">null</div>
+            <label for="registerEmail"></label>
+            <input type="text" name="registerEmail" id="registerEmail" class="registerInput" placeholder="Email">
+            <div id="registerEmailError">null</div>
+            <label for="registerCity"></label>
+            <input type="text" name="registerCity" id="registerCity" class="registerInput" placeholder="City">
+            <div id="registerCityError">null</div>
+            <button id="sendRegisterButton">register</button>
+        </div>
+        <div id="windowCrashedWin">
+            <div class="windowCrashed">Window crashed!</div>
+            <div class="windowCrashed">Please reload website!</div>
+        </div>
+        <div id="timerHeader">Time to login for Security-reason:</div>
+        <div id="timer">5</div>
+        <div id="login">
+            <div id="loginHeader">Login</div>
+            <div id="usernameInput" class="loginfield">
+                <label for="usernameInput"></label>
+                <input class="loginInput" id="username" name="username" type="password" placeholder="Username">
+            </div>
+            <div id="passwordInput" class="loginfield">
+                <label for="password"></label>
+                <input class="loginInput" id="password" name="password" type="text" placeholder="Password">
+            </div>
+            <div id="remPwCon">
+                <div class="cbpw">
+                    <div>
+                        <input type="checkbox" name="rememberCb" id="rememberCb">
+                        <label id="checkboxLabel" for="rememberCb">Remember me</label>
+                    </div>
+                </div>
+                <button class="cbpw" id="forgotPasswordButton">Forgot Password?</button>
+            </div>
+            <button id="loginButton">Login</button>
+            <div id="register">Don't have an account? <button id="registerButton">Register</button></div>
+            <div id="alreadyRegistered">You're already registered!</div>
+        </div>
+        <div id="stopTimer">click me</div>
+    </div>
+</body>
+<script src="src/login.js"></script>
+</html>
