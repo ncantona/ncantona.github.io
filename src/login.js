@@ -31,7 +31,7 @@ let timeOutId;
 
 /* array of password messages */
 
-const passwordMsgArray = ["Let me alone.", "I said let me alone.", "Are you serious?", "Get a live bro..", "FUCK OFF DUDE!"];
+const passwordMsgArray = ["Leave me alone.", "I said leave me alone.", "Are you serious?", "Get a live bro..", "FUCK OFF DUDE!"];
 
 /* iterates through the array of Password messages that getting
 displayed in the first password field */
